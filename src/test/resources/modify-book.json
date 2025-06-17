@@ -1,0 +1,39 @@
+[
+  {
+    "input": {
+      "book_ISBN": "9789861365640",
+      "book_language": "2",
+      "book_name": "發現你的天職：三大步驟，讓你選系、就業、轉職或創業不再迷惘",
+      "book_author": "八木仁平",
+      "book_publisher": "如何",
+      "book_pub_date": "2021-01-01",
+      "book_create_date": "2022-12-12",
+      "book_status": "1"
+    }
+  ,
+    "expect": {
+      "MWHEADER": {
+        "RETURNCODE": "0000",
+        "RETURNDESC": "交易成功"
+      }
+    }
+  },
+  {
+    "input": {
+      "book_language": "2",
+      "book_name": "發現你的天職：三大步驟，讓你選系、就業、轉職或創業不再迷惘",
+      "book_author": "八木仁平",
+      "book_publisher": "如何",
+      "book_pub_date": "2021-01-01",
+      "book_create_date": "2022-12-12",
+      "book_status": "1"
+    }
+  ,
+    "expect": {
+      "MWHEADER": {
+        "RETURNCODE": "V001",
+        "RETURNDESC": "缺乏必要輸入欄位:bookIsbn : 必填"
+      }
+    }
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "input": {
+      "overdue": 1
+    }
+  ,
+    "expect": {
+      "MWHEADER": {
+        "RETURNCODE": "0000",
+        "RETURNDESC": "交易成功"
+      },
+      "query_count":0,
+      "query_list":[]
+    }
+  },
+  {
+    "input": {
+    }
+  ,
+    "expect": {
+      "MWHEADER": {
+        "RETURNCODE": "V001",
+        "RETURNDESC": "缺乏必要輸入欄位:overdue : 必填"
+      }
+    }
+  },
+  {
+    "input": {
+      "overdue": 0
+    }
+  ,
+    "expect": {
+      "MWHEADER": {
+        "RETURNCODE": "V001",
+        "RETURNDESC": "缺乏必要輸入欄位:overdue : 需為整數"
+      }
+    }
+  },
+  {
+    "input": {
+      "overdue": -1
+    }
+  ,
+    "expect": {
+      "MWHEADER": {
+        "RETURNCODE": "V001",
+        "RETURNDESC": "缺乏必要輸入欄位:overdue : 需為整數"
+      }
+    }
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "input": {
+      "book_ISBN": "9787115488800",
+      "book_borrower_ID": "00514956"
+    }
+  ,
+    "expect": {
+      "MWHEADER": {
+        "RETURNCODE": "0000",
+        "RETURNDESC": "交易成功"
+      }
+    }
+  },
+  {
+    "input": {
+
+    }
+  ,
+    "expect": {
+      "MWHEADER": {
+        "RETURNCODE": "V001",
+        "RETURNDESC": "缺乏必要輸入欄位:bookBorrowerId : 必填,bookIsbn : 必填"
+      }
+    }
+  }
+]

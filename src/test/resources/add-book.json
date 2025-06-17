@@ -1,0 +1,34 @@
+[
+  {
+    "input": {
+      "book_ISBN": "9787115488800",
+      "book_language": "2",
+      "book_name": "Java攻略 Java常見問題的簡單解法",
+      "book_author": "",
+      "book_publisher": "人民郵電",
+      "book_pub_date": "2018-08-01"
+    },
+    "expect": {
+      "MWHEADER": {
+        "RETURNCODE": "0000",
+        "RETURNDESC": "交易成功"
+      }
+    }
+  },
+  {
+    "input": {
+      "book_ISBN": "9787115488800",
+      "book_language": "4",
+      "book_name": null,
+      "book_author": "超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字超過200字",
+      "book_publisher": "人民郵電",
+      "book_pub_date": "2018-08-01"
+    },
+    "expect": {
+      "MWHEADER": {
+        "RETURNCODE": "V001",
+        "RETURNDESC":"缺乏必要輸入欄位:bookLanguage : 必填選項 1-中文(繁體), 2-中文(簡體), 3-英文,bookAuthor : 文字200位(含中文),bookName : 必填"
+      }
+    }
+  }
+]
