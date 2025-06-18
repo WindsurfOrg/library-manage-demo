@@ -447,7 +447,7 @@ class BookServiceTest {
                 .bookStatus(BookStatus.OUT)
                 .bookBorrowerId("bookBorrowerId")
                 .borrowDate(LocalDate.now().minusDays(41))
-                .overdueDays(2L)
+                .overdueDays(1L)
                 .build());
         final List<Book> books = List.of(Book.builder()
                 .bookIsbn("bookIsbn")
